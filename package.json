@@ -1,0 +1,22 @@
+{
+  "name": "co-workers",
+  "version": "1.0.0",
+  "description": "An innovative server-side web application dynamically rendered from JSON data, meticulously crafted using Node.js ",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borchkhadzetornike/node-co-workers.git"
+  },
+  "author": "Tornike Borchkhadze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borchkhadzetornike/node-co-workers/issues"
+  },
+  "homepage": "https://github.com/borchkhadzetornike/node-co-workers#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
