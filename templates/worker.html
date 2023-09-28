@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #EBE4D1;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heading {
+            text-align: center;
+            font-weight: bold;
+            margin: 60px auto 20px;
+            font-size: 36px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column !important;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f1f1f1;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            margin: 10px;
+            width: 800px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card div span {
+            margin-bottom: 10px;
+            font-size: 18px;
+            display: inline-block;
+            border-right: 1px solid black;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #26577C;
+            color: #e0e0e0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1D4566;
+        }
+
+        .detail{
+            margin: 12px 0;
+        }
+
+        .detail span{
+            font-weight: bold;
+        }
+    </style>
+    <title>Co-Workers List</title>
+</head>
+<body>
+
+<div class="table-container">
+    <h1 class="heading">📌 {{NAME}} {{SURNAME}}</h1>
+    <div class="card-container">
+
+        <div class="card">
+            <a href="/overview" class="btn" style="margin-bottom: 24px; ">Go Back! 👈</a>
+
+            <span class="detail"><span>Worker ID: </span><i>{{ID}}</i></span>
+            <span class="detail"><span>Position: </span><i>{{POSITION}}</i></span>
+            <span class="detail"><span>Department: </span><i>{{DEPARTMENT}}</i></span>
+            <span class="detail"><span>E-mail: </span><i>{{EMAIL}}</i></span>
+            <span class="detail"><span>Phone: </span><i>{{PHONE}}</i></span>
+            <span class="detail"><span>Address: </span><i>{{ADDRESS}}</i></span>
+            <span class="detail"><span>Birth Day: </span><i>{{BIRTHDAY}}</i></span>
+            <span class="detail"><span>Hire Date: </span><i>{{HIREDATE}}</i></span>
+            <span class="detail"><span>Salary: </span><i>{{SALARY}} $</i></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
